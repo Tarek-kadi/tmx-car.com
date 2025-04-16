@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMX Cars | سيارات فاخرة في دبي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #000;
+      color: #d4af37;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #d4af37;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1605727216800-03f767209f9d?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      z-index: 2;
+      color: #d4af37;
+      padding: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.4em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    .cars-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .car-card {
+      background-color: #1a1a1a;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #d4af37;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-card h4 {
+      padding: 15px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: right;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #d4af37;
+      background-color: #1a1a1a;
+      color: #d4af37;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      background-color: #d4af37;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #bfa437;
+    }
+
+    footer {
+      background-color: #111;
+      color: #d4af37;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 2px solid #d4af37;
+    }
+
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TMX Cars</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" style="background-image: url( TMX.png); background-repeat: repeat;">
+    <div class="hero-content">
+      <h2>تمتع بالفخامة والقوة مع TMX Cars</h2>
+      <p style="background-color: rgb(196, 130, 44);color: #000;">أفضل العروض لأحدث وأقوى السيارات من دبي الى سوريا . سياراتنا مختارة بعناية لتناسب ذوقك الرفيع.</p>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>معرض السيارات</h3>
+    <div class="cars-gallery">
+      <div class="car-card">
+        <img src="jeeep.jpg" alt="Jeep Wrangler">
+        <h4>Jeep Wrangler Rubicon 2021</h4>
+        <p>•Model Year : 2021 <br>
+          •Mileage : 18,000 Km<br>
+          • Cylinder : 6<br>
+          •Regional Spec : Gcc<br>
+          •Transmission : Manual Gear<br>
+          •Power horse : 200-300 Hp<br>
+          •Fuel : Gasoline<br>
+          • Door: 2 doors<br>
+          •Perfect inside and outside<br>
+          • Interior color: Black</p>
+      </div>
+      <div class="car-card">
+        <img src="2012.jpg" alt="Mercedes CLS 63 AMG">
+        <h4>Mercedes CLS 63 AMG</h4>
+        <p>Model Year: 2012 <br>
+          • Mileage: 186,000 km<br> 
+          • Cylinders: 8<br>
+          • Regional Specs: American<br>
+          • Color: Grey<br>
+          • Transmission: Automatic<br>
+          • Horsepower: 500-550 hp<br>
+          • Fuel: Gasoline<br>
+          • Doors: 4-door<br>
+          • Excellent inside and out<br>
+          • Interior Color: beige</p>
+      </div>
+      <div class="car-card">
+        <img src="2022.jpg" alt="Dodge Challenger">
+        <h4>Dodge Challenger</h4>
+        <p>•Model Year : 2022 <br>
+          • Mileage : 104,000 mile<br>
+          •Cylinder : 6<br>
+          • Regional Spec : American<br>
+          • Transmission : Automatic<br>
+          •Power horse : 300-400 Hp<br>
+          •Fuel : Gasoline<br>
+          • Door: 2 doors<br>
+          •Perfect inside and outside<br>
+          • Interior color: Black<br>
+          </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>تواصل معنا</h3>
+    <form class="contact-form">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+      <label for="message">رسالتك</label>
+      <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📍 دبي، الإمارات العربية المتحدة</p>
+    <p>📞 00971552409949</p>
+    <p>📸 تابعنا على الإنستغرام: <a href="https://www.instagram.com/tmx_cars?igsh=MTY3ZnZxMGE0YzB5dg==" target="_blank">@tmx.cars</a></p>
+    <p>&copy; 2025 TMX Cars. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("تم إرسال رسالتك بنجاح. شكراً لتواصلك مع TMX Cars!");
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
